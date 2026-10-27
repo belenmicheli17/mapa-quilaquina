@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vuelta a Quila Quina</title>
+<meta name="description" content="Mapa del circuito a pie de Quila Quina, desde el muelle.">
+<meta name="theme-color" content="#F3E9DC">
+</head><body>
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:#F3E9DC}
+.ph{width:100%;max-width:480px;min-height:100dvh;margin:0 auto;background:#F3E9DC;overflow:hidden;font-family:'Trebuchet MS',sans-serif;color:#2F4A3A;display:flex;flex-direction:column;box-sizing:border-box}
+.hd{padding:16px 18px 10px;display:flex;justify-content:space-between;align-items:flex-end}
+.hd small{display:block;color:#8A9A6B;font-size:14px}
+.hd h3{margin:0;font-size:28px;color:#B5502F;font-weight:500}
+.hd span{font-size:13px;color:#F3E9DC;background:#2F4A3A;border-radius:14px;padding:6px 11px;margin-bottom:4px}
+.mp{margin:0 10px;border-radius:16px;overflow:hidden;position:relative}
+.mp svg{display:block;width:100%;height:245px}
+.fit{position:absolute;right:8px;top:8px;border:0;background:#F3E9DCdd;color:#2F4A3A;border-radius:14px;padding:5px 10px;font:inherit;font-size:12px;cursor:pointer}
+.dots{display:flex;gap:6px;justify-content:center;padding:12px 0 8px}
+.dots i{width:7px;height:7px;border-radius:4px;background:#d8cbb6;transition:.3s}
+.vw{overflow:hidden;padding:2px 0 4px 16px;clip-path:inset(0 0 0 12px)}
+.tk{display:flex;gap:10px;transition:transform .35s ease}
+.cd{flex:0 0 calc(100vw - 92px);max-width:388px;box-sizing:border-box;background:#fff;border:2.5px solid;border-radius:18px;padding:14px 16px}
+.cd .n{display:inline-flex;flex:0 0 26px;height:26px;border-radius:50%;color:#fff;font-size:14px;align-items:center;justify-content:center;margin-right:8px}
+.cd h4{margin:0;font-size:18px;display:flex;align-items:center}
+.cd .ds{font-size:13px;color:#8a7a62;margin:6px 0}
+.cd p{font-size:14px;line-height:1.4;margin:0 0 10px;min-height:40px}
+.cd button{border:0;border-radius:20px;padding:8px 16px;color:#fff;font:inherit;font-size:15px;cursor:pointer;float:right}
+.ch{display:inline-block;font-size:12px;background:#F3E9DC;border-radius:10px;padding:2px 8px;margin:0 4px 6px 0}
+.ac{display:inline-block;font-size:12px;color:#fff;background:#B5502F;border-radius:10px;padding:2px 8px;margin-left:auto}
+.sw{display:flex;gap:6px;justify-content:center;margin:0 0 10px;font-family:'Trebuchet MS',sans-serif}
+.sw button{border:1px solid #2F4A3A;background:#fff;color:#2F4A3A;border-radius:14px;padding:5px 14px;cursor:pointer}
+.sw button.on{background:#2F4A3A;color:#F3E9DC}
+@media(min-width:820px){.ph{max-width:1100px;min-height:0;height:100vh;display:grid;grid-template-columns:1fr 372px;grid-template-rows:auto auto auto 1fr}
+.hd{grid-column:1/3}.mp{grid-row:2/5;margin:0 0 16px 16px}.mp svg{height:100%!important}
+.dots,.vw{grid-column:2}.ad{grid-column:2;margin:12px 16px auto;align-self:start}.vw{clip-path:inset(0 8px 0 12px)}.cd{flex-basis:340px}}
+.ad{margin:auto 16px 16px;border-radius:16px;padding:13px 15px;color:#F3E9DC;display:flex;justify-content:space-between;align-items:center;gap:10px;transition:background .3s}
+.ad b{display:block;font-size:15px}.ad small{font-size:12px;opacity:.85}
+.ad a{color:#2F4A3A;background:#F3E9DC;border-radius:16px;padding:7px 12px;font-size:13px;text-decoration:none;white-space:nowrap}
+</style>
+<div class="ph" id="ph">
+<div class="hd"><div><small>Bienvenidos a</small><h3>Quila Quina</h3></div><span>3,3 km · 1 h 30</span></div>
+<div class="mp"><svg id="m" viewBox="40 30 640 400" preserveAspectRatio="xMidYMid slice" style="background:#C9D3A8;font-family:sans-serif">
+<defs>
+<g id="cn"><path d="M0 0 L-9 0 L0 -26 L9 0Z" fill="#2F4A3A"/><path d="M0 -26 L9 0 L0 0Z" fill="#244033"/></g>
+<g id="cn2"><path d="M0 0 L-7 0 L0 -19 L7 0Z" fill="#5E7A55"/><path d="M0 -19 L7 0 L0 0Z" fill="#4E6847"/></g>
+<g id="rd"><circle r="12" fill="#8A9A6B"/><circle cx="-3" cy="-3" r="7" fill="#9DAD7E"/></g>
+<g id="rd2"><circle r="8" fill="#7C8C5F"/><circle cx="-2" cy="-2" r="4" fill="#8FA070"/></g>
+<path id="wv" d="M0 0 q6 -5 12 0 t12 0" fill="none" stroke="#9FC4C7" stroke-width="2.5" stroke-linecap="round"/>
+</defs>
+<path d="M40 330 C80 315 110 340 120 380 L120 430 L40 430Z" fill="#B7C495"/>
+<path d="M440 430 C470 415 520 418 560 430Z" fill="#B7C495"/>
+<path d="M135 100 C150 92 150 80 165 68 C190 55 230 48 280 42 C320 38 355 35 375 50 C400 75 430 105 460 135 C495 170 525 205 545 240 C560 265 570 290 580 320 C590 350 600 390 615 430" fill="none" stroke="#E9D6B4" stroke-width="22" stroke-linecap="round"/>
+<path d="M-300 -300 H1000 V800 H700 L615 430 C600 390 590 350 580 320 C570 290 560 265 545 240 C525 205 495 170 460 135 C430 105 400 75 375 50 C355 35 320 38 280 42 C230 48 190 55 165 68 C150 80 150 92 135 100 C110 108 70 110 40 112 L-300 112Z" fill="#6FA3A8"/>
+<use href="#wv" x="70" y="60"/><use href="#wv" x="470" y="70"/><use href="#wv" x="520" y="160"/><use href="#wv" x="620" y="230"/><use href="#wv" x="640" y="360"/><use href="#wv" x="400" y="40"/><use href="#wv" x="600" y="60"/>
+<path d="M148 92 C128 160 135 225 175 268 S200 325 160 430" fill="none" stroke="#9FC4C7" stroke-width="13" stroke-linecap="round"/>
+<path d="M148 92 C128 160 135 225 175 268 S200 325 160 430" fill="none" stroke="#6FA3A8" stroke-width="8" stroke-linecap="round"/>
+<path d="M176 302 q4 -3 8 0 M178 312 q4 -3 8 0 M176 322 q4 -3 8 0" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+<g fill="none" stroke="#F6F0E4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 262 C100 250 150 232 195 225 S330 210 400 207 S500 204 530 203"/><path d="M415 127 C400 160 390 185 385 207"/><path d="M545 282 C500 292 470 305 450 312 S370 345 335 350 S270 330 250 322 S215 300 205 290"/></g>
+<rect x="138" y="232" width="24" height="9" rx="2" fill="#8C5A3C" transform="rotate(-14 150 236)"/>
+<g><use href="#cn" x="185" y="128"/><use href="#cn2" x="196" y="148"/><use href="#cn" x="182" y="168"/><use href="#cn" x="194" y="198"/><use href="#cn2" x="178" y="214"/><use href="#cn" x="205" y="230"/><use href="#cn2" x="120" y="150"/><use href="#cn" x="110" y="200"/><use href="#cn2" x="105" y="290"/><use href="#cn" x="80" y="320"/><use href="#cn" x="100" y="375"/><use href="#cn2" x="125" y="410"/></g>
+<g><use href="#rd" x="300" y="120"/><use href="#rd2" x="318" y="135"/><use href="#rd" x="270" y="160"/><use href="#rd" x="290" y="260"/><use href="#rd2" x="312" y="272"/><use href="#rd" x="450" y="245"/><use href="#rd2" x="470" y="258"/><use href="#rd" x="400" y="290"/><use href="#rd2" x="490" y="350"/><use href="#rd" x="510" y="360"/><use href="#rd2" x="250" y="410"/><use href="#rd" x="350" y="412"/><use href="#rd2" x="440" y="170"/><use href="#rd" x="240" y="105"/><use href="#cn" x="470" y="215"/><use href="#cn2" x="350" y="250"/><use href="#cn" x="540" y="320"/></g>
+<g transform="translate(560 266) rotate(-8)"><rect x="0" y="-5" width="52" height="10" rx="2" fill="#A9744F"/><g stroke="#6B4630" stroke-width="2"><path d="M10 -5 v10 M22 -5 v10 M34 -5 v10 M46 -5 v10"/></g><circle cx="50" cy="8" r="2.5" fill="#6B4630"/><circle cx="50" cy="-8" r="2.5" fill="#6B4630"/></g>
+<g transform="translate(628 292)"><path d="M-18 0 L18 0 L12 8 L-12 8Z" fill="#F3E9DC"/><path d="M-18 0 L18 0" stroke="#B5502F" stroke-width="3"/><rect x="-6" y="-7" width="10" height="7" fill="#D9953A"/><use href="#wv" x="-24" y="16"/></g>
+<g transform="translate(553 352)"><rect x="-8" y="-10" width="16" height="12" fill="#F3E9DC" stroke="#8C5A3C" stroke-width="1.5"/><path d="M-11 -10 L0 -20 L11 -10Z" fill="#B5502F"/><path d="M0 -28 v8 M-3 -25 h6" stroke="#8C5A3C" stroke-width="1.8"/></g>
+<g transform="translate(522 420)"><path d="M-9 0 v-9 a9 9 0 0 1 18 0 v9Z" fill="#A69E8A"/><path d="M-4 0 v-7 a4 4 0 0 1 8 0 v7Z" fill="#6FA3A8"/></g>
+<path id="tr" d="M552 272 L520 215 L480 175 L440 150 L405 115 L362 52 L300 50 L240 68 L185 88 L168 100 L155 160 L156 180 L158 200 L178 245 L205 290 L225 325 L245 360 L285 378 L330 385 L400 392 L450 398 L490 401 L540 396 L560 378 L577 338 L570 310 L552 272" fill="none" stroke="#7A4A33" stroke-opacity=".45" stroke-width="5" stroke-dasharray="1 9" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="dn" fill="none" stroke="#B5502F" stroke-width="5" stroke-dasharray="1 9" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="330" y="345" width="11" height="11" fill="#2F4A3A" stroke="#fff" stroke-width="2" transform="rotate(45 335 350)"/>
+<rect x="345" y="152" width="11" height="11" fill="#2F4A3A" stroke="#fff" stroke-width="2" transform="rotate(45 350 157)"/>
+<text x="590" y="134" text-anchor="middle" font-size="22" font-style="italic" fill="#F3E9DC">Lago Lácar</text>
+<g font-size="15" fill="#2F4A3A" stroke="#F3E9DC" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">
+<text x="338" y="150" text-anchor="end">Seccional</text><text x="335" y="378" text-anchor="middle">Cobro de acceso</text>
+<text x="530" y="278" text-anchor="end">Muelle</text>
+<text x="398" y="133" text-anchor="end">Escuela 33</text>
+<text x="360" y="82" text-anchor="middle">La Puntilla</text>
+<text x="186" y="104">Desembocadura</text>
+<text x="138" y="186" text-anchor="end">Cipresal</text>
+<text x="222" y="296">Cascada "Arroyo Grande"</text>
+<text x="472" y="422" text-anchor="end">Virgen y agua mineral</text>
+<text x="596" y="338">Capilla y</text><text x="596" y="355">cabalgatas</text>
+</g>
+<g font-size="10" font-weight="700" fill="#fff"><g transform="translate(512 300)"><rect x="-11" y="-8" width="22" height="16" rx="4" fill="#6FA3A8" stroke="#fff" stroke-width="1.5"/><text y="4" text-anchor="middle">WC</text></g><g transform="translate(232 268)"><rect x="-11" y="-8" width="22" height="16" rx="4" fill="#6FA3A8" stroke="#fff" stroke-width="1.5"/><text y="4" text-anchor="middle">WC</text></g></g>
+<g id="st"></g>
+<g id="pin"><path d="M0 0 C-6 -9 -12 -15 -12 -22 a12 12 0 1 1 24 0 c0 7 -6 13 -12 22Z" fill="#B5502F" stroke="#fff" stroke-width="2.5"/><circle cy="-22" r="4.5" fill="#fff"/><g id="aca"><rect x="-38" y="-62" width="76" height="22" rx="11" fill="#2F4A3A"/><text y="-46" text-anchor="middle" font-size="13" fill="#F3E9DC">Estás acá</text></g></g>
+</svg><button class="fit" id="fit">⤢ ver todo</button></div>
+<div class="dots" id="dt"></div>
+<div class="vw"><div class="tk" id="tk"></div></div>
+<div class="ad" id="ad"></div>
+</div>
+<script>
+const C=['#B5502F','#D9953A','#8A9A6B','#2F4A3A','#6FA3A8'];
+const S=[
+{c:['Artesanos','Baños','Kayak y sombrillas','Lanchas'],t:'Muelle',p:[552,272],d:'Inicio y fin · vuelta completa 1 h 30',x:'Bahía reparada del viento. Puestos de artesanos, alquiler de sombrillas y kayaks, y salidas en lancha.',a:['Salidas en lancha por el Lácar','Pesca y paseos en familia desde 1991','pesca.lacar']},
+{c:['Seccional cerca'],t:'Escuela 33',p:[415,127],d:'600 m · 15 min',x:'Escuela de la comunidad. A 230 m por la calle del medio está la seccional de guardaparques.',a:['Dulces caseros','Hechos en Quila Quina','Ver más']},
+{c:['Playa'],t:'La Puntilla',p:[360,52],d:'250 m · 7 min',x:'La punta de Quila Quina. Una de las playas más lindas, con vista abierta al lago.',a:['Tu publicidad acá','Espacio para comercios locales','Ver más']},
+{c:['Kitesurf'],t:'Desembocadura',p:[168,100],d:'550 m · 15 min',x:'Donde el Arroyo Grande llega al lago. El camino va por adentro, no por la playa. Cerca se practica kitesurf.',a:['Artesanías en madera','Puestos junto al muelle','Ver más']},
+{c:['Sombra','Arroyo'],t:'Cipresal',p:[156,180],d:'190 m · 5 min',x:'Bosque de cipreses a lo largo del arroyo. Seguí por la margen derecha hasta el puente.',a:['Tu publicidad acá','Espacio para comercios locales','Ver más']},
+{c:['Baño','Entrada paga'],t:'Cascada "Arroyo Grande"',p:[205,290],d:'485 m · 13 min',x:'Entrada al rápido del Arroyo Grande. La comunidad cobra la entrada.',a:['Cabalgatas','Salidas junto a la capilla','Ver más']},
+{c:['Solo a pie'],t:'Virgen y agua mineral',p:[490,401],d:'730 m · 20 min',x:'Sendero solo a pie. Pasás por la gruta de la Virgen y la vertiente de agua mineral.',a:['Tu publicidad acá','Espacio para comercios locales','Ver más']},
+{c:['Cabalgatas'],t:'Capilla y cabalgatas',p:[577,338],d:'320 m · 9 min',x:'La capilla, siempre cerrada, y al lado las cabalgatas. Desde acá quedan 150 m (4 min) al muelle.',a:['Salidas en lancha por el Lácar','Volvé al muelle y salí al lago','pesca.lacar']}
+];
+const N=S.length,ns='http://www.w3.org/2000/svg',svg=document.getElementById('m');
+const tr=document.getElementById('tr'),L=tr.getTotalLength(),dn=document.getElementById('dn'),pin=document.getElementById('pin');
+const PT=[];for(let l=0;l<=L;l+=3)PT.push(tr.getPointAtLength(l));
+S.forEach(s=>{let b=0,bd=1e9;PT.forEach((q,k)=>{const dd=(q.x-s.p[0])**2+(q.y-s.p[1])**2;if(dd<bd){bd=dd;b=k*3;}});s.l=b;});S[0].l=0;
+const st=document.getElementById('st');
+S.forEach((s,i)=>{const g=document.createElementNS(ns,'g');g.style.cursor='pointer';g.innerHTML=`<circle cx="${s.p[0]}" cy="${s.p[1]}" r="14" fill="${C[i%5]}" stroke="#fff" stroke-width="3"/><text x="${s.p[0]}" y="${s.p[1]+5}" text-anchor="middle" fill="#fff" font-size="14">${i+1}</text>`;g.onclick=()=>go(i);st.appendChild(g);});
+function setLen(l){const n=Math.floor(l/3);let d='M'+PT[0].x+' '+PT[0].y;for(let k=1;k<=n&&k<PT.length;k++)d+=' L'+PT[k].x.toFixed(1)+' '+PT[k].y.toFixed(1);const e=tr.getPointAtLength(Math.min(l,L));d+=' L'+e.x.toFixed(1)+' '+e.y.toFixed(1);dn.setAttribute('d',l>0?d:'');pin.setAttribute('transform',`translate(${e.x.toFixed(1)},${(e.y-14).toFixed(1)})`);}
+const FULL=[40,30,640,400];let vb=FULL.slice(),cur=0,raf;
+function boxFor(i){if(i==0||PC)return FULL;const r=svg.getBoundingClientRect(),H=245*(PC?1.5:1),W=H*r.width/r.height,p=S[i].p;return[Math.max(40,Math.min(680-W,p[0]-W/2)),Math.max(30,Math.min(430-H,p[1]-H/2)),W,H];}
+function anim(toL,toB,wrap){cancelAnimationFrame(raf);const fL=cur,fB=vb.slice(),t0=performance.now(),D=900;
+function step(n){const k=Math.min(1,(n-t0)/D),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;cur=fL+(toL-fL)*e;vb=fB.map((v,j)=>v+(toB[j]-v)*e);svg.setAttribute('viewBox',vb.map(v=>v.toFixed(1)).join(' '));setLen(cur);
+if(k<1)raf=requestAnimationFrame(step);else if(wrap){cur=0;setLen(0);}}raf=requestAnimationFrame(step);}
+const tk=document.getElementById('tk'),dt=document.getElementById('dt'),ad=document.getElementById('ad');
+let h='';for(let r=0;r<3;r++)S.forEach((s,i)=>{const c=C[i%5];h+=`<div class="cd" style="border-color:${c}"><h4><span class="n" style="background:${c}">${i+1}</span>${s.t}${i==0?'<span class="ac">📍 Estás acá</span>':''}</h4><div class="ds">${s.d}</div><div>${s.c.map(x=>`<span class="ch">${x}</span>`).join('')}</div><p>${s.x}</p><button style="background:${c}" onclick="nx()">${i==N-1?'Volver al muelle ↻':'Seguir ›'}</button></div>`;});
+tk.innerHTML=h;S.forEach(()=>dt.appendChild(document.createElement('i')));
+let pos=N,idx=0;
+function place(a){tk.style.transition=a?'':'none';tk.style.transform=`translateX(${-pos*(tk.firstChild.offsetWidth+10)}px)`;}
+function show(i,fwd){const prev=idx;idx=i;const a=document.getElementById('aca');if(a)a.style.display=i==0?'':'none';const s=S[i];
+const wrap=fwd&&i==0&&prev==N-1;anim(wrap?L:s.l,boxFor(i),wrap);
+[...dt.children].forEach((d,j)=>{d.style.background=j==i?C[i%5]:'#d8cbb6';d.style.width=j==i?'18px':'7px'});
+ad.innerHTML=`<div><b>${s.a[0]}</b><small>${s.a[1]}</small></div><a href="#" onclick="return false">${s.a[2]} ›</a>`;
+ad.style.background=['#B5502F','#2F4A3A'].includes(C[i%5])?C[i%5]:'#2F4A3A';}
+function nx(){pos++;place(1);show(((pos%N)+N)%N,true);}
+function pv(){pos--;place(1);show(((pos%N)+N)%N,false);}
+function go(i){if(i===idx)return;pos=N+i;place(1);show(i,i>idx);}
+tk.addEventListener('transitionend',e=>{if(e.target!==tk)return;if(pos>=2*N){pos-=N;place(0);}else if(pos<N){pos+=N;place(0);}});
+let sx=null;tk.addEventListener('pointerdown',e=>sx=e.clientX);tk.addEventListener('pointerup',e=>{if(sx==null)return;const d=e.clientX-sx;if(d<-40)nx();else if(d>40)pv();sx=null;});
+document.getElementById('fit').onclick=()=>anim(cur,FULL,false);
+const mq=matchMedia('(min-width:820px)');let PC=mq.matches;
+function mode(){PC=mq.matches;svg.setAttribute('preserveAspectRatio',PC?'xMidYMid meet':'xMidYMid slice');place(0);anim(cur,boxFor(idx),false);}
+mq.addEventListener('change',mode);addEventListener('resize',()=>place(0));
+const QR=new URLSearchParams(location.search).get('qr')==='muelle';
+if(!QR){document.getElementById('aca').remove();document.querySelectorAll('.ac').forEach(e=>e.remove());}
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+window.nx=nx;mode();setLen(0);show(0,false);
+</script>
+</body></html>
